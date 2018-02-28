@@ -24,21 +24,24 @@ export default class Header extends Component {
 	render() {
 		const {handleSubmit} = this
 		return (
-			<nav>
+			<header>
+				<h1>Portfolio</h1>
 				<form onSubmit={handleSubmit}>
 					<label htmlFor='username'>username</label>
 					<input type='text' autoFocus id='username' name='username' value={this.state.username} onChange={event=>{this.setState({username:event.target.value})}} />
-					<br />
+					
 					<label htmlFor='password'> password</label>
 					<input type='password' id='password' name='password' value={this.state.password} onChange={event=>{this.setState({password:event.target.value})}} />
 					<button> submit </button>
 				</form>
 
-				<ul>
-					<li><Link to='/'>Home</Link></li>
-					<li><Link to='/users'>Users</Link></li>
-				</ul>			
-			</nav>
+				<nav>
+					<ul>
+						<li><Link to='/'>Home</Link></li>
+						<li><Link to='/users'>Users</Link></li>
+					</ul>
+				</nav>
+			</header>
 		)
 	}
 

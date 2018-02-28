@@ -5,7 +5,7 @@ import Header from './Header.jsx'
 
 const App = () => {
 	return (
-		<div>
+		<div className='container'>
 			<Header />
 			<Main messages={{message:"sending message zzzz"}} />
 			<Footer message={"this is the footer"} />

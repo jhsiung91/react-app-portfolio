@@ -3,7 +3,9 @@ import React from 'react'
 const Home = () => {
 	return (
 		<p>
-			Welcome to my page !
+			<h2>
+				Welcome to my page !
+			</h2>
 		</p>
 	)
 }

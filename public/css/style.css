@@ -1,0 +1,50 @@
+/*Switches us from content box model which includes the margin, to the border box model. inherit border-box on all elements in the universe and before and after*/ 
+html {   
+	box-sizing: border-box; 
+}
+	 
+ *, *:before, *:after {
+   box-sizing: inherit; 
+}
+
+body {
+	/*background-color: blue;*/
+}
+
+.container {
+	width: 70rem;
+	margin: auto;
+	display: grid;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 2fr 3fr 1fr;
+	margin: 0;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 3rem;
+}
+
+form {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	height: 1rem;
+	position: relative;
+	top: 1rem;
+
+}
+
+nav ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+
+
